@@ -1,0 +1,30 @@
+-How to build an API with python(LLM integration,fastapi,OLLama and more)?
+
+-so basically , ai models exist and they are powerful tools .. but when u want to use them u basically need to control them using an API 
+
+-so if u want to use an LLM , like openai or deepseek or whatever , u either run them locally or use the cloud provider.
+
+-cloud provider? so u are gonna go to deepseek or openai or whatever, generate an API key. and u r gonna take the API key , and thats what u send anytime u want to make a request or use the LLM (this works fine locally but not in a production environmenet)
+
+-in a production env , if u were to take this API key and use it directly from ur frontend (something like a website or a mobile app) , you'de be introducing a huge security risk
+why? if u use it from withing ur frontend , tehn everyone using ur frontend  code will be abe to see and use the api key(they can send all sorts of requests and cost more money)
+-even if it's runnning locally it costs u computing time and stuff...nvm..
+-so the main idea here is that you only want to invoke an LLM coming from a provider like open ai ,from something thats secure,smth u control, it would be a backend serveror an API.
+-the basic flow would be if someone has access to ur frontend app,they would then send request to ur own backend,from ur backend then , u could control whether u wnat or not to send a request to the LLM.(u can control how much it costs and how many users use the LLM)
+
+-an example of local LLMs that u can run on ur machine is Ollama(open source)(assuming u have a good hardware): DL ollama then open a CLI and pull the model u wnat to use after checking hardware requiremenets.
+
+-if u wnat to test ur api  work with postman.
+
+
+
+
+
+
+
+
+
+
+
+--API concepts (design and architecture):--
+
